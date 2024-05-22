@@ -1,7 +1,12 @@
 package pl.coderslab;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Book {
 
   private Long id;
@@ -11,12 +16,4 @@ public class Book {
   private String publisher;
   private String type;
 
-  public Book(Long id, String isbn, String title, String author, String publisher, String type) {
-    this.id = id;
-    this.isbn = isbn;
-    this.title = title;
-    this.author = author;
-    this.publisher = publisher;
-    this.type = type;
-  }
 }
